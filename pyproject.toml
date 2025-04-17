@@ -1,0 +1,24 @@
+[project]
+name = "rewatch"
+version = "0.0.1"
+description = "Like watch, but prettier"
+authors = [
+    {name = "itsthom",email = "glargorn@gmail.com"}
+]
+license = {text = "AGPL-3.0-or-later"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[project.scripts]
+rewatch = "rewatch.main:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
