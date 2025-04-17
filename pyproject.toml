@@ -7,8 +7,10 @@ authors = [
 ]
 license = {text = "AGPL-3.0-or-later"}
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4.0"
 dependencies = [
+    "textual (>=3.1.0,<4.0.0)",
+    "typer (>=0.15.2,<0.16.0)"
 ]
 
 [project.scripts]
@@ -22,3 +24,14 @@ build-backend = "poetry.core.masonry.api"
 optional = true
 
 [tool.poetry.group.dev.dependencies]
+textual-dev = "^1.7.0"
+pytest = "^8.3.5"
+pytest-mock = "^3.14.0"
+mypy = "^1.15.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+flake8 = "^7.2.0"
+flake8-bugbear = "^24.12.12"
+
+[tool.isort]
+profile = "black"
