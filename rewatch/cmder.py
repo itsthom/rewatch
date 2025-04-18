@@ -13,6 +13,7 @@ class CmdResult:
 
 
 async def run_cmd(cmd: str) -> CmdResult:
+    print("run_cmd ", cmd)
     process = await asyncio.create_subprocess_shell(
         cmd,
         stdout=asyncio.subprocess.PIPE,

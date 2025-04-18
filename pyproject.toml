@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-rewatch = "rewatch.main:main"
+rewatch = "rewatch.main:app"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
